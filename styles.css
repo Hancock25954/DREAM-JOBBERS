@@ -1,0 +1,452 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #2e8b57; /* Dark green */
+    color: #ecf0f1; /* Light grey */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ecf0f1; /* Light grey */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #3cb371; /* Pleasant dark green */
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+
+.hero button {
+    background-color: #2e8b57; /* Dark green */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #276749; /* Darker green */
+}
+
+.job-listings {
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+}
+
+.job-listings h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #bdc3c7; /* Grey */
+}
+
+.job h3 {
+    margin-top: 0;
+}
+
+.job button {
+    background-color: #2e8b57; /* Dark green */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.job button:hover {
+    background-color: #276749; /* Darker green */
+}
+
+.login form{
+    margin: 48px !important;
+}
+
+.checkbox-container { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+} 
+.checkbox-container input[type="checkbox"] { 
+    margin-right: 10px; 
+}
+
+.signup, .login {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 47px auto;
+    border: 1px solid #bdc3c7; /* Grey */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup h1, .login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup form, .login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label, .login label {
+    margin-bottom: 5px;
+}
+
+.signup input, .login input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Grey */
+    border-radius: 5px;
+}
+
+.signup button, .login button {
+    background-color: #2e8b57; /* Dark green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup button:hover, .login button:hover {
+    background-color: #276749; /* Darker green */
+}
+
+footer {
+    background-color: #2e8b57; /* Dark green */
+    color: #ecf0f1; /* Light grey */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-media a {
+    color: #ecf0f1; /* Light grey */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #3cb371; /* Pleasant dark green */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ecf0f1; /* Light grey */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Page Styles */
+.portfolio {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.portfolio h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs ol {
+    list-style: circle;
+    padding: 0;
+    display: inline-block;
+}
+
+.breadcrumbs ol li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumbs ol li a {
+    color: #2e8b57; /* Dark green */
+    text-decoration: none;
+}
+
+.breadcrumbs ol li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #3cb371; /* Pleasant dark green */
+}
+
+.portfolio-details {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.portfolio-images img {
+    width: 100%;
+    height: min-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.portfolio-info {
+    flex: 1;
+    background-color: #ecf0f1; /* Light grey */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin-bottom */
+}
+
+.portfolio-info h3 {
+    margin-top: 0;
+}
+
+.portfolio-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-info ul li {
+    margin-bottom: 10px;
+}
+
+.portfolio-info ul li strong {
+    color: #2e8b57; /* Dark green */
+}
+
+.portfolio-description {
+    flex: 1;
+    background-color: #ecf0f1; /* Light grey */
+    padding: 60px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.portfolio-description h2 {
+    margin-top: 0;
+}
+
+/* Companies & Employers Hiring Page Styles */
+.companies {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.companies h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.company-card {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #bdc3c7; /* Grey */
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.company-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #2e8b57; /* Dark green */
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #2e8b57; /* Dark green */
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #2e8b57; /* Dark green */
+    color: #fff;
+}
+
+.featured-jobs {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.featured-jobs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-listing {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7; /* Grey */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.assessment-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assessment-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.assessment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.assessment-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.assessment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:#3cb371;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.assessment-form button:hover {
+    background-color:  #2e8b57;
+}
+/* Styles for the Professional CV Page */
+.cv-section {
+    padding: 2rem 0;
+}
+
+.cv {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cv-header h3 {
+    margin: 0;
+}
+
+.cv-body h4 {
+    margin-top: 1.5rem;
+}
+
+.cv-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-body ul li {
+    margin-bottom: 1rem;
+}

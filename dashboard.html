@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Skills Assessment</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dashboard.html">Dash Board</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="assessment-intro">
+            <h2>Test for the Best!</h2>
+            <p>Discover who has the right skills to do the job with our Skills Assessments.</p>
+        </section>
+        <section class="assessment-form">
+            <h2>Get Started</h2>
+            <form action="submit_assessment.php" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <button type="submit">Request a Demo</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DREAM JOBBERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/pics/apple-touch-icon.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="awesome/css/all.min.css">
+    <meta name="description" content="Login to access your account and find your dream job with our job board. Connecting you with top companies and job opportunities.">
+    <meta name="keywords" content="jobs, careers, employment, job board, login, companies, opportunities">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/pics/apple-touch-icon.PNG" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="companies.html"><i class="fas fa-building"></i> Companies</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-user-plus"></i> Dash Board</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login" id="section">
+            <h1>Login to Your Account</h1>
+            <form action="submit_login" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+                
+                <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+            </form>
+            <p>Don't have an Account <a href="#" id="signup" style="text-decoration: none; color: green;">Sign Up</a></p>
+        </section>
+        <section class="signup" id="section2" style="display: none;">
+            <h1>Create Your Account</h1>
+            <form action="submit_signup" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="johndoe123#" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+                
+                <button type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+            </form>
+            <div class="checkbox-container"> 
+                <input type="checkbox" id="remember" name="remember"> 
+                <label for="remember">Remember me</label> 
+            </div>
+            <p>Already A member <a href="#" id="login" style="text-decoration: none; color: green;">Login</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Job Board. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const section = document.getElementById('section');
+        const section2 = document.getElementById('section2');
+        const signup = document.getElementById('signup');
+        const login = document.getElementById('login');
+
+        document.getElementById('signup').addEventListener('click', function() {
+            document.getElementById('section2').style.display = 'block';
+            document.getElementById('section').style.display = 'none';
+
+        });
+        document.getElementById('login').addEventListener('click', function() {
+            document.getElementById('section').style.display = 'block';
+            document.getElementById('section2').style.display = 'none';
+
+        });
+    </script>
+</body>
+</html>
